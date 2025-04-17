@@ -93,7 +93,7 @@ const Analysis = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/generate/compare",
+        "https://leaf-lens-backend.vercel.app/generate/compare",
         formData
       );
       if (res.data && res.data.info) {
