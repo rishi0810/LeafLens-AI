@@ -72,7 +72,7 @@ const Analysis = () => {
     formData.append("image", image);
 
     try {
-      const res = await axios.post("http://localhost:3000/generate/compare", formData);
+      const res = await axios.post("https://leaf-lens-backend.vercel.app/generate/compare", formData);
       if (res.data && res.data.info) {
         setText(res.data.info);
         setAnalysisResults(res.data.allresult || []);
